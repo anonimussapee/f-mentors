@@ -7,6 +7,9 @@
 html{
   font-size: 62.5%;
 }
+body{
+  background-color: #f7f7f7;
+}
 .img{
   background-position: center;
   background-repeat: no-repeat;
@@ -19,13 +22,62 @@ html{
   word-spacing: .5rem ;
   letter-spacing: .1rem;
 }
-.bg-middle{
-  background-image: url(../../assets/images/bg-main-mobile.png);
-}
 
-.back-card{
-  background-image: url(../../assets/images/bg-card-back.png);
+@media (max-width:700px) {
+  .container-principal{
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-middle{
+    background-image: url(../../assets/images/bg-main-mobile.png);
+  }
+  .back-card{
+    background-image: url(../../assets/images/bg-card-back.png);
+    top: 2.2rem;
+    left: calc(50% - 134px);
+  }
+  .front-card{
+    background-image: url(../../assets/images/bg-card-front.png);
+    top:11.5rem;
+    left: calc(50% - 155px);
+  }
+  .modal{
+    position: absolute;
+    bottom: 0;
+    padding: 2.5rem 0;
+    width: 100%;
+  }
 }
-.front-card{
-  background-image: url(../../assets/images/bg-card-front.png);
+@media (min-width:701px) {
+  .container-principal{
+    display: flex;
+    flex-direction: row;
+  }
+  .bg-middle{
+    background-image: url(../../assets/images/bg-main-desktop.png);
+  }
+  .back-card{
+    background-image: url(../../assets/images/bg-card-back.png);
+    bottom: calc(35% - 8rem);
+    left: calc(80% - 134px);
+  }
+  .front-card{
+    background-image: url(../../assets/images/bg-card-front.png);
+    top:calc(40% - 8rem);
+    left: calc(75% - 155px);
+  }
+  .modal{
+    position: absolute;
+    top: calc(50% - 15rem);
+    right:4%;
+    width: 50%;
+  }
+}
+@media (min-width:900px) {
+  .modal{
+    position: absolute;
+    top: calc(50% - 15rem);
+    right: 15%;
+    width: 40%;
+  }
 }
