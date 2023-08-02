@@ -48,7 +48,7 @@ function App() {
       <p className='text-[2.5rem] font-medium pt-4'>THANK YOU!</p>
       <p className='text-[1.8rem] text-gray-500 pb-4'>We've added your card details</p>
       <button onClick={()=>setOpenModal(false)} className='bg-[#27083b] text-white font-extrabold text-[1.8rem] p-3 w-[80%] min-w-[200px] max-w-[250px] rounded-xl word-space self-center'>Continue</button>
-    </Modal>: <form onClick={handleSumbit} className='smMax:w-[90%] sm:w-[60%] max-w-[400px] h-auto mt-28 font-space font-bold flex flex-col gap-5'>
+    </Modal>: <form onSubmit={handleSumbit} className='smMax:w-[90%] sm:w-[60%] max-w-[400px] h-auto mt-28 font-space font-bold flex flex-col gap-5'>
         <label htmlFor="CardHolderName" className='flex flex-col gap-2'>
           <span className='text-[1.6rem]'>CARDHOLDER NAME</span>
           <input required onChange={handleChange} type="text" placeholder='e.g. Jane Appleseed' name='CardHolderName' minLength={3} className='p-3 text-[1.6rem] rounded-xl border-gray-400 border-[.1rem] ' />
