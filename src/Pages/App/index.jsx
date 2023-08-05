@@ -34,7 +34,7 @@ function App() {
       </div>
       <div className='front-card img w-[288px] h-[16rem] absolute rounded-xl z-20'>
         <div className='h-full w-full relative'>
-          <img src={cardlogo} className='w-24 h-[3rem] absolute top-10 left-11'/>
+          <img src={cardlogo} alt='logoIMG' className='w-24 h-[3rem] absolute top-10 left-11'/>
           <p className='text-[1.7rem] absolute top-10 right-11 text-white  font-space '>VISA</p>
           <p className='text-[1.8rem] absolute top-[8.5rem] left-11 text-white font-bold font-space word-space'>{cardData.cardNumber}</p>
           <p className='text-[1.7rem] absolute top-[11.5rem] left-11 text-white  font-space '>{cardData.CardHolderName}</p>
